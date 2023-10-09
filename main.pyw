@@ -16,10 +16,12 @@ bob = Agent(name="bob", endpoint="http://localhost:8001")
 login_agent = Agent(name="login", endpoint="http://localhost:8002")
 
 # Configure the Twilio client
-account_sid = "ACc9c3dda4014509874d198b814ede3192"
-auth_token = "728c906d44efa18bdb7b116b26451178"
+account_sid = ""
+auth_token = ""
 client = Client(account_sid, auth_token)
 
+
+myheader = {"apikey": ""}
 
 # Define a message model
 class Message(Model):
@@ -53,7 +55,7 @@ def check_exchange_rate(base, foreign, threshold_list):
 
     for foreign_currency, threshold in zip(foreign.split(","), thresholds):
         url = f"https://api.apilayer.com/exchangerates_data/convert?to={foreign_currency}&from={base}&amount={amount}"
-        headers = {"apikey": "h0tmZtMCP1Q7iavlGQpEu4viqvEbxdcj"}
+        headers = myheader
         response = requests.get(url, headers=headers)
 
         if response.status_code == 200:
@@ -93,7 +95,7 @@ def display_all_currencies():
 
 def fetch_currencies():
     url = "https://api.apilayer.com/exchangerates_data/symbols"
-    headers = {"apikey": "h0tmZtMCP1Q7iavlGQpEu4viqvEbxdcj"}
+    headers = myheader
 
     response = requests.get(url, headers=headers)
 
