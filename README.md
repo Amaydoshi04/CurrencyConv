@@ -40,7 +40,7 @@ Acknowledgments
 
 Thank you for using the Currency Exchange Monitor & Alert Agent! We hope it helps you stay informed about exchange rate fluctuations.
 
-To generate an API key for the ExchangeRates API provided by apilayer, you can follow these steps:
+To generate an API key for the ExchangeRates API provided by apilayer (https://apilayer.com/marketplace/exchangerates_data-api), you can follow these steps:
 1.	Visit the apilayer Marketplace: Open your web browser and navigate to the apilayer Marketplace.
 2.	Sign Up or Log In: If you don't already have an apilayer account, you will need to sign up for one. If you have an account, log in using your credentials.
 3.	Select ExchangeRates API: In the marketplace, find the ExchangeRates API or use the search bar to locate it. Click on the API to view its details.
