@@ -62,3 +62,5 @@ c. Provide a friendly name for your API key (for your reference) and select the 
 d. Click the "Create API Key" button.
 e. Once created, you'll be shown your API Key and Secret. Make sure to save these credentials in a secure location, as you won't be able to access the secret again.
 Using Twilio in Your Application: With your API key and secret in hand, you can start using Twilio in your application.
+
+You may use the .pyw file to run the application continuously. If any error occurs, you may use the .py file.
